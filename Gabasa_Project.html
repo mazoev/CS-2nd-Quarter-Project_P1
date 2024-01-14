@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Feet Apart</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        #poster {
+            width: 300px;
+            height: 400px;
+            margin: 30px;
+            margin-right: 20px;
+            transform: translate(20px, 40px)
+        }
+
+        #cast {
+            max-width: 100%;
+            transform: translate(20px, 3px);
+        }
+
+        .cast-member img {
+            width: 150px;
+            height: 200px;
+            margin-bottom: 10px;
+            transform: translate(20px, 3px);
+        }
+
+        #movie-info {
+            transform: translate(500px, 500px);
+            width: 20px;
+            height: 50px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 13px;
+            color: pink;
+            text-align: center;
+            padding: 14px 13px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .nav {
+            font-size: 13px;
+            border: none;
+            outline: none;
+            color: pink;
+            padding: 14px 13px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .nav {
+            background-color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(248, 175, 187);
+            min-width: 160px;
+            box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Highlight style */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="Untitled-1.html">Home</a>
+    <div class="dropdown">
+        <button class="nav">Quick Navigation
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Mean Girls</a>
+            <a href="#">Trolls</a>
+            <a href="#">Four Sisters and a Wedding</a>
+            <a href="#">Five Feet Apart</a>
+        </div>
+    </div>
+</div>
+
+<header>
+    <h1>Five Feet Apart</h1>
+</header>
+
+<main>
+    <section id="cast">
+        <h2>Main Cast:</h2>
+        <article class="cast-member">
+            <img src="c:\Users\lenovo\Downloads\download (5).jpg" alt="Cast Member 1">
+            <p><span class="highlight">Haley Lu Richardson</span></p>
+        </article>
+        <article class="cast-member">
+            <img src="c:\Users\lenovo\Downloads\download (6).jpg" alt="Cast Member 2">
+            <p><span class="highlight">Cole Sprouse</span></p>
+        </article>
+        <article class="cast-member">
+            <img src="c:\Users\lenovo\Downloads\download (7).jpg" alt="Cast Member 3">
+            <p><span class="highlight">Moisés Arias</span></p>
+        </article>
+        <article class="cast-member">
+            <img src="c:\Users\lenovo\Downloads\download (8).jpg" alt="Cast Member 4">
+            <p><span class="highlight">Emily Baldoni</span></p>
+        </article>
+        <article class="cast-member">
+            <img src="c:\Users\lenovo\Downloads\download (9).jpg" alt="Cast Member 5">
+            <p><span class="highlight">Claire Forlani</span></p>
+        </article>
+    </section>
+
+
+    <div id="movie-info">
+        <ul>
+            <li>Genre: Drama, Romance</li>
+            <li>Release Date: March 15, 2019</li>
+            <li>Main Cast: <span>Haley Lu Richardson</span>, <span>Cole Sprouse</span>, <span>Moisés Arias</span>, <span>Emily Baldoni</span>, <span>Claire Forlani</span></li>
+        </ul>
+        <p><strong>Storyline:</strong> "Five Feet Apart" unfolds the touching love story between Stella and Will, two teenagers with cystic fibrosis, who must maintain a safe distance to avoid cross-infection. As they go through the challenges of their illness and the strict medical protocols, their connection deepens, and they discover the strength of the human spirit in the face of adversity.</p>
+        <p><strong>Review:</strong> "Five Feet Apart" is a deeply moving, heart-wrenching romance that goes beyond conventional love stories. Haley Lu Richardson and Cole Sprouse deliver nuanced performances, capturing the emotional complications of their characters with authenticity. The film delicately addresses the harsh realities of chronic illness with sensitivity, offering a powerful exploration of love, resilience, and the indomitable human spirit. While it tugs at the heartstrings, "Five Feet Apart" leaves a lasting impact, reminding audiences of the profound beauty found in human connections and the courage to defy all odds.</p>
+    </div>
+
+    <aside>
+        <section>
+            <img id="poster" src="c:\Users\lenovo\Downloads\s-l1600.jpg" alt="Movie Poster">
+        </section>
+    </aside>
+</main>
+
+</body>
+</html>
